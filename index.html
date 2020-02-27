@@ -2,8 +2,16 @@
 <head>
 </head>
 <body>
-I'm 潘磊磊
-<br>
-<img id="logo" src="Grand Theft Auto V Screenshot 2020.02.24 - 10.40.55.69.jpg">
+    <script src="jssor.slider.min.js"></script>
+    <div id="jssor_1" style="position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+        <div data-u="slides" style="position:absolute;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div><img id="logo" src="1.jpg"/></div>
+            <div><img id="logo" src="2.jpg"/></div>                                
+        </div>                                
+    </div>
+    <script>
+        var options = { $AutoPlay: 1 };
+        var jssor_1_slider = new $JssorSlider$("jssor_1", options);
+    </script>
 </body>
 </html>

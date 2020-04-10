@@ -13,6 +13,10 @@
         ];
         
         $(function(){
+
+            $.get("./data.json",function(result){
+                console.log(result)
+            });
             _.each(data,function(item){
                 $("ul").append("<li>"+item.name+"学分："+item.credit+")"+"</li>");
             });
